@@ -119,6 +119,15 @@ To create an environment from a yml file:
 
 `conda env create -f environment_myenv.yml`
 
+#### Setup for Jupyter Notebook/Lab
+To enable the usage of this environment as a kernel in Jupyter, run the following Conda prompt command:
+
+`ipython kernel install --name myenv`
+
+Then you should be able to run Jupyter and select the environment as needed:
+
+
+
 ### Sample conda environment creation
 `conda create --name geospatial python=3.6`
 
