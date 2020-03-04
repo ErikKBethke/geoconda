@@ -126,7 +126,9 @@ To enable the usage of this environment as a kernel in Jupyter, run the followin
 
 Then you should be able to run Jupyter and select the environment as needed:
 
+![Jupyter Lab](https://raw.githubusercontent.com/ErikKBethke/geoconda/master/screenshots/jupyterLab.PNG)
 
+![JupyterNotebook](https://raw.githubusercontent.com/ErikKBethke/geoconda/master/screenshots/jupyterNB.PNG)
 
 ### Sample conda environment creation
 `conda create --name geospatial python=3.6`
