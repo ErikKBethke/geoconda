@@ -27,23 +27,29 @@ This guide requires that Anaconda is installed and conda is update to date (cond
 Helpful commands for troubleshooting include the following:
 
 Get list of all conda environments:
+
 `conda env list`
 
 Get a list of packages in an environment:
+
 `conda list -n myenv`
 
 See if a package has been installed in an environment:
+
 `conda list -n myenv mypackage`
 
 ### Environment Creation
 **Note: manual installation is done via the anaconda prompt terminal that comes with Anaconda distributions**
 Creating a new environment is done with the command:
+
 `conda create --name myenv`
 
 However, is it valuable to also specify the python version you are intending on using (for example, if a package you are using is only on certain python versions):
+
 `conda create --name myenv python=3.6`
 
 You can also create environments with specific packages (and specify versions), although it is easy enough to add these later:
+
 `conda create --name myenv scipy=0.15.0 numpy pandas`
 
 **It is strongly recommended to install all programs at the same time to an environment to avoid dependency conflicts. Using a environment.yml file is usually the most ideal for avoiding dependency issues.**
@@ -69,6 +75,6 @@ Here is a list of packages that are particularly useful for geospatial analytics
 
 
 ### Sample conda environment creation
-conda create --name usgcrp python=3.8
+`conda create --name usgcrp python=3.8
 conda activate usgcrp
-conda install scipy ipykernel
+conda install scipy ipykernel`
