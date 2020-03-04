@@ -8,10 +8,6 @@ Future versions will potentially include scripts that automatically create the c
 Last Updated: March 4, 2020
 
 To-Do:
-- Initial setup
-- Package install
-- Yaml install
-- Package selections
 - Mac, Linux compatability
 - Automate conda environment setup
 - Create miniconda compatability with setup
@@ -66,7 +62,7 @@ You can also create environments with specific packages (and specify versions), 
 
 **It is strongly recommended to install all programs at the same time to an environment to avoid dependency conflicts. Using a environment.yml file is usually the most ideal for avoiding dependency issues.**
 
-### Package Installation
+### Package Selection & Installation
 There are two different sections of packages to go over: generally useful packages (config, file management, general analytics, etc.) and the geospatial packages.
 
 ##### General Packages
@@ -95,6 +91,33 @@ Here is a list of packages that are particularly useful for geospatial analytics
 - [seaborn](http://seaborn.pydata.org/) - data visualization library that can be used for additional plotting options
 
 **Note: some packages (cartopy, etc.) recommend that you install using [conda-forge](https://conda-forge.org/docs/user/introduction.html) as a channel. This is an optional method but be aware specifying conda-forge as a channel to install from can create endless solving loops upon installing packages. This guide uses conda-forge as recommended.**
+
+##### Installation
+
+After selecting the packages desired from the above (and any additional packages), installing packages can be done as follows:
+
+1. Optionally enable conda-forge for packages that recommend it:
+
+`conda config --add channels conda-forge
+conda config --set channel_priority strict`
+
+2. Install packages (recommended to do all at once to avoid dependency issues):
+
+`conda install --channel conda-forge scipy ipykernel xarray matplotlib seaborn cartopy Pillow pysal pyproj gdal shapely descartes pyshp geopandas rasterio fiona netCDF4`
+
+### Additional Options
+Below are some more advanced methods that can be used.
+
+#### Use of YML files
+YML files can be used to export/import environment configurations. This is extremely helpful when trying to quickly set up/replicate an environment that will work consistently.
+
+To export your active environment yml, navigate in (a non-conda) terminal to a directory you would like the file to be placed:
+
+`conda env export --name myenv > environment_myenv.yml`
+
+To create an environment from a yml file:
+
+`conda env create -f environment_myenv.yml`
 
 ### Sample conda environment creation
 `conda create --name geospatial python=3.6
