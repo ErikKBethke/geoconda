@@ -120,8 +120,8 @@ To create an environment from a yml file:
 `conda env create -f environment_myenv.yml`
 
 ### Sample conda environment creation
-`conda create --name geospatial python=3.6
-conda activate geospatial
-conda config --add channels conda-forge
-conda config --set channel_priority strict
-conda install --channel conda-forge scipy ipykernel xarray matplotlib seaborn cartopy Pillow pysal pyproj gdal shapely descartes pyshp geopandas rasterio fiona netCDF4`
+`conda create --name geospatial python=3.6`
+`conda activate geospatial`
+`conda config --add channels conda-forge`
+`conda config --set channel_priority strict`
+`conda install --channel conda-forge scipy ipykernel xarray matplotlib seaborn cartopy Pillow pysal pyproj gdal shapely descartes pyshp geopandas rasterio fiona netCDF4`
