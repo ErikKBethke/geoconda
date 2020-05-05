@@ -139,4 +139,4 @@ Then you should be able to run Jupyter and select the environment as needed:
 
 `conda config --set channel_priority strict`
 
-`conda install --channel conda-forge scipy ipykernel xarray matplotlib seaborn cartopy Pillow pysal pyproj gdal shapely descartes pyshp geopandas rasterio fiona netCDF4`
+`conda install --channel conda-forge scipy ipykernel xarray matplotlib seaborn cartopy Pillow pysal pyproj gdal shapely descartes pyshp geopandas rasterio fiona netCDF4 us`
