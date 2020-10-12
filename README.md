@@ -1,7 +1,7 @@
 # geoconda
 
 ## Creating a basic geospatial conda environment
-geoconda is a simple repository of information for setting up a conda environment for geospatial analysis in a Windows environment.
+geoconda is a simple repository of information for setting up a conda environment for analysis in a Windows/Mac environment.
 
 Future versions will potentially include scripts that automatically create the conda environment.
 
