@@ -1,4 +1,4 @@
-name: snowflake
+name: braze_bi
 channels:
   - defaults
   - conda-forge
